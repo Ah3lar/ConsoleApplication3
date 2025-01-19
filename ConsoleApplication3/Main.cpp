@@ -14,5 +14,14 @@ int main() {
     std::cout << "Array size: " << arr.getSize() << std::endl;
     std::cout << "Array capacity: " << arr.getCapacity() << std::endl;
 
+    std::cout << "Removing element at index 2" << std::endl;
+    arr.Remove(2);
+
+    std::cout << "Array after removal: ";
+    for (size_t i = 0; i < arr.getSize(); ++i) {
+        std::cout << arr[i] << " ";
+    }
+    std::cout << std::endl;
+
     return 0;
 }
