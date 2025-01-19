@@ -53,4 +53,11 @@ public:
     size_t getCapacity() const {
         return capacity;
     }
+
+    void Append(const T& value) {
+        if (size == capacity) {
+            resize(capacity * 2);
+        }
+        data[size++] = value;
+    }
 };
